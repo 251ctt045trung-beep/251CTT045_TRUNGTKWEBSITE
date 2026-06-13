@@ -1,30 +1,44 @@
 document.addEventListener("DOMContentLoaded", function () {
+
     const header = document.querySelector("header");
     window.addEventListener("scroll", function () {
         if (window.scrollY > 50) {
-            header.style.backgroundColor = "#2b1f15"; 
-            header.style.boxShadow = "0 4px 10px rgba(0,0,0,0.3)";
+            header.classList.add("sticky");
         } else {
-            header.style.backgroundColor = "#4a3525";
-            header.style.boxShadow = "0 2px 5px rgba(0,0,0,0.2)";
+            header.classList.remove("sticky");
         }
     });
+    const navLinks = document.querySelectorAll("nav ul li a, .btn");
+    navLinks.forEach(link => {
+        link.addEventListener("click", function (e) {
+            const targetId = this.getAttribute("href");
+            if (targetId.startsWith("#")) {
+                e.preventDefault(); 
+                
+                const targetSection = document.querySelector(targetId);
+                if (targetSection) {
+                    targetSection.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start"
+                    });
+                }
+            }
+        });
+    });
     const contactForm = document.querySelector(".contact-form form");
-
     if (contactForm) {
-        contactForm.addEventListener("submit", function (event) {
-            event.preventDefault();
-            const name = contactForm.querySelector("input[type='text']").value;
-            const email = contactForm.querySelector("input[type='email']").value;
-            const message = contactForm.querySelector("textarea").value;
-            alert(`Cảm ơn ${name}! Yêu cầu đặt bàn của bạn đã được gửi thành công. Chúng tôi sẽ liên hệ lại qua email: ${email} sớm nhất có thể.`);
+        contactForm.addEventListener("submit", function (e) {
+            e.preventDefault(); 
+
+            const name = this.querySelector('input[type="text"]').value;
+            const email = this.querySelector('input[type="email"]').value;
+            const message = this.querySelector('textarea').value;
+
+           
+            alert(`Cảm ơn ${name} đã liên hệ với The Coffee Cup!\nChúng tôi sẽ phản hồi lại bạn qua email: ${email} trong thời gian sớm nhất.`);
+
+           
             contactForm.reset();
         });
     }
-    const navLinks = document.querySelectorAll("nav ul li a");
-    navLinks.forEach(link => {
-        link.addEventListener("click", () => {
-            console.log(`Đang chuyển đến phần: ${link.textContent}`);
-        });
-    });
 });
