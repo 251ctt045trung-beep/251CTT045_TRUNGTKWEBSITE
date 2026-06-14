@@ -44,7 +44,7 @@
         }
 
         nav ul li a {
-            color: #f4f1de;
+            color: #1f6fca;
             text-decoration: none;
             font-weight: 500;
             transition: color 0.3s;
@@ -167,7 +167,7 @@
 
         .menu-desc {
             font-size: 14px;
-            color: #777;
+            color: #3717c9;
         }
         .contact {
             padding: 60px 10%;
@@ -189,7 +189,7 @@
 
         .contact-info p {
             margin-bottom: 15px;
-            color: #555;
+            color: #1a2294;
         }
 
         .contact-info strong {
@@ -208,7 +208,7 @@
         .form-group input, .form-group textarea {
             width: 100%;
             padding: 12px;
-            border: 1px solid #ddd;
+            border: 1px solid #a11f1f;
             border-radius: 4px;
             outline: none;
         }
@@ -219,7 +219,7 @@
 
         .btn-submit {
             background-color: #4a3525;
-            color: white;
+            color: rgb(196, 147, 147);
             border: none;
             padding: 12px 25px;
             cursor: pointer;
@@ -234,7 +234,7 @@
         }
         footer {
             background-color: #2b1f15;
-            color: #a8a39d;
+            color: #c28234;
             text-align: center;
             padding: 20px;
             font-size: 14px;
