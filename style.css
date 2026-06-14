@@ -44,7 +44,7 @@
         }
 
         nav ul li a {
-            color: #1f6fca;
+            color: #fcfcfc;
             text-decoration: none;
             font-weight: 500;
             transition: color 0.3s;
@@ -100,7 +100,7 @@
 
         .about h2, .menu h2, .contact h2 {
             font-size: 32px;
-            color: #4a3525;
+            color: #b6b3b1;
             margin-bottom: 20px;
             position: relative;
         }
@@ -154,7 +154,7 @@
 
         .menu-title {
             font-size: 20px;
-            color: #4a3525;
+            color: #c9c9c9;
             margin-bottom: 10px;
             display: flex;
             justify-content: space-between;
@@ -189,7 +189,7 @@
 
         .contact-info p {
             margin-bottom: 15px;
-            color: #1a2294;
+            color: #f8f8f8;
         }
 
         .contact-info strong {
@@ -208,7 +208,7 @@
         .form-group input, .form-group textarea {
             width: 100%;
             padding: 12px;
-            border: 1px solid #a11f1f;
+            border: 1px solid #ffffff;
             border-radius: 4px;
             outline: none;
         }
@@ -218,7 +218,7 @@
         }
 
         .btn-submit {
-            background-color: #4a3525;
+            background-color: #5e3737;
             color: rgb(196, 147, 147);
             border: none;
             padding: 12px 25px;
@@ -230,10 +230,10 @@
 
         .btn-submit:hover {
             background-color: #d4a373;
-            color: #4a3525;
+            color: #f1f1f1;
         }
         footer {
-            background-color: #2b1f15;
+            background-color: #fcfaf9;
             color: #c28234;
             text-align: center;
             padding: 20px;
