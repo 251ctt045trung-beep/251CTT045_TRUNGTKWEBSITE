@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Coffee Cup - Quán Cà Phê Ấm Áp</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -12,18 +12,24 @@
         <div class="logo">The Coffee <span>Cup</span></div>
         <nav>
             <ul>
-                <li><a href="#home">Trang Chủ</a></li>
-                <li><a href="#about">Giới Thiệu</a></li>
-                <li><a href="#menu">Thực Đơn</a></li>
-                <li><a href="#contact">Liên Hệ</a></li>
+                <li><a href="#home" class="nav-link active">Trang Chủ</a></li>
+                <li><a href="#about" class="nav-link">Giới Thiệu</a></li>
+                <li><a href="#menu" class="nav-link">Thực Đơn</a></li>
+                <li><a href="#contact" class="nav-link">Liên Hệ</a></li>
             </ul>
         </nav>
     </header>
 
     <section class="hero" id="home">
-        <h1>Khởi Đầu Ngày Mới Với Tách Cà Phê Đậm Vị</h1>
-        <p>Hạt cà phê nguyên chất được tuyển chọn kỹ lưỡng, mang đến cho bạn không gian thư giãn và hương vị tuyệt hảo nhất.</p>
-        <a href="#menu" class="btn">Xem Thực Đơn Ngay</a>
+        <div class="hero-slider">
+            <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?ixlib=rb-4.0.3" alt="Không gian quán 1" class="slide active">
+            <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?ixlib=rb-4.0.3" alt="Không gian quán 2" class="slide">
+        </div>
+        <div class="hero-content">
+            <h1>Khởi Đầu Ngày Mới Với Tách Cà Phê Đậm Vị</h1>
+            <p>Hạt cà phê nguyên chất được tuyển chọn kỹ lưỡng, mang đến cho bạn không gian thư giãn và hương vị tuyệt hảo nhất.</p>
+            <a href="#menu" class="btn">Xem Thực Đơn Ngay</a>
+        </div>
     </section>
 
     <section class="about" id="about">
@@ -34,27 +40,28 @@
     <section class="menu" id="menu">
         <h2>Món Ngon Nổi Bật</h2>
         <div class="menu-container">
-            <div class="menu-item">
+            
+            <article class="menu-item">
                 <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?ixlib=rb-4.0.3" alt="Cà phê sữa đá" class="menu-img">
                 <div class="menu-info">
                     <div class="menu-title">
                         <span>Cà Phê Sữa Đá</span>
-                        <span class="price">15.000đ</span>
+                        <span class="price">25.000đ</span>
                     </div>
                     <p class="menu-desc">Hương vị cà phê truyền thống đậm đà hòa quyện cùng sữa đặc béo ngậy.</p>
                 </div>
-            </div>
+            </article>
         
-            <div class="menu-item">
+            <article class="menu-item">
                 <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?ixlib=rb-4.0.3" alt="Cappuccino" class="menu-img">
                 <div class="menu-info">
                     <div class="menu-title">
                         <span>Cappuccino</span>
-                        <span class="price">15.000đ</span>
+                        <span class="price">35.000đ</span>
                     </div>
                     <p class="menu-desc">Sự kết hợp hoàn hảo giữa Espresso, sữa nóng và lớp bọt mịn màng.</p>
                 </div>
-            </div>
+            </article>
         </div>
     </section>
 
@@ -64,7 +71,7 @@
             <div class="contact-info">
                 <p><strong>Địa chỉ:</strong> 82 Nguyễn Chí Thanh, P. Tân An, TP. Buôn Ma Thuột, Đắk Lắk</p>
                 <p><strong>Điện thoại:</strong> 0799892697</p>
-                <p><strong>Giờ mở cửa:</strong> 06:00 AM - 11:00 AM</p>
+                <p><strong>Giờ mở cửa:</strong> 06:00 AM - 10:00 PM</p>
                 <p><strong>Email:</strong> info@thecoffeecup.com</p>
             </div>
             <div class="contact-form">
