@@ -95,7 +95,7 @@
         .about {
             padding: 60px 10%;
             text-align: center;
-            background-color: #fff;
+            background-color: #ffffff;
         }
 
         .about h2, .menu h2, .contact h2 {
@@ -193,7 +193,7 @@
         }
 
         .contact-info strong {
-            color: #4a3525;
+            color: #fdfdfd;
         }
 
         .contact-form {
