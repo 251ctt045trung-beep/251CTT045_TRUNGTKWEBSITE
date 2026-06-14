@@ -13,4 +13,4 @@ Công nghệ sử dụng:
 - CSS
 - JavaScript
 
-  https://251ctt045trung-beep.github.io/251CTT045_TRUNGTKWEBSITE/
+Link live :https://251ctt045trung-beep.github.io/251CTT045_TRUNGTKWEBSITE/
